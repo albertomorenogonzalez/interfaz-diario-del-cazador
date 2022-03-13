@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Diario del Cazador</title>
+  <link rel="shotcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body id="principal">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-4" href="#">
+        <img class="rounded-circle pe-auto" id="logo" src="./images/null.png" alt="no registered user profile photo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ps-4 ps-lg-0">
+            <a class="nav-link active" aria-current="page" href="./registrousuario.html">Regístrate</a>
+          </li>
+          <li class="nav-item ps-4 ps-lg-0">
+            <a class="nav-link active" aria-current="page" href="./index.html">Iniciar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div id="wrapper" class="container p-4 my-5">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center vh-80 m-auto">
+          <div class="table-responsive bg-dark mt-5 p-3">
+            <table class="table table-striped table-dark align-middle p-5 text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Enemigo</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Zona</th>
+                  <th scope="col">Boss</th>
+                  <th scope="col">Editar</th>
+                  <th scope="col">Borrar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="nombre">Reptacillo</td>
+                  <td><img src="./images/reptacillo.png" alt="reptacillo"></td>
+                  <td class="text-start">Tímido carroñero que se arrastra por las cavernas buscando comida.</td>
+                  <td data-bs-toggle="tooltip" title="Un pequeño pueblo situado en lo más alto de Hallownest, llegamos a él al poco de empezar el juego.">Bocasucia</td>
+                  <td>No</td>  
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Tiktik</td>
+                  <td><img src="./images/tiktik.png" alt="tiktik"></td>
+                  <td class="text-start">Tímido carroñero que se arrastra por las cavernas buscando comida.</td>
+                  <td data-bs-toggle="tooltip" title="Un pequeño pueblo situado en lo más alto de Hallownest, llegamos a él al poco de empezar el juego.">Bocasucia</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Vengamosca</td>
+                  <td><img src="./images/vengamosca.png" alt="vengamosca"></td>
+                  <td class="text-start">Depredador volador que persigue a su presa incansablemente.</td>
+                  <td data-bs-toggle="tooltip" title="Un pequeño pueblo situado en lo más alto de Hallownest, llegamos a él al poco de empezar el juego.">Bocasucia</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Cáscara Errante</td>
+                  <td><img src="./images/cascaraerrante.png" alt="cascara errante"></td>
+                  <td class="text-start">Los restos de un insecto, reanimados por una extraña fuerza. Vaga por los caminos en los que solía vivir.</td>
+                  <td data-bs-toggle="tooltip" title="Estas carreteras antaño eran concurridas por viajeros de todo Hallownest. Pero tras muchos años el deterioro, las plagas de bichos agresivos y los restos de antiguos habitantes, las han transformado en una zona peligrosa.">Cruces Olvidados</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Falso Caballero</td>
+                  <td><img src="./images/falsocaballero.png" alt="falso caballero"></td>
+                  <td class="text-start">Un gusano al que una fuerza extraña ha vuelto loco. Vive en una coraza blindada robada.</td>
+                  <td data-bs-toggle="tooltip" title="Estas carreteras antaño eran concurridas por viajeros de todo Hallownest. Pero tras muchos años el deterioro, las plagas de bichos agresivos y los restos de antiguos habitantes, las han transformado en una zona peligrosa.">Cruces Olvidados</td>
+                  <td>Sí</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Musgoagresor</td>
+                  <td><img src="./images/musgoagresor.png" alt="musgoagresor"></td>
+                  <td class="text-start">Tímida criatura que asusta a los intrusos cubriéndose con enormes trozos de musgo.</td>
+                  <td data-bs-toggle="tooltip" title="Profundidades llenas de vegetación, protegidas por bichos cubiertos de plantas. La gran cantidad de ácido y vegetación dificultan el paso.">Sendero Verde</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Hornet</td>
+                  <td><img src="./images/hornet.png" alt="hornet"></td>
+                  <td class="text-start">Habilidosa protectora de las ruinas de Hallownest. Empuña una aguja e hilo.</td>
+                  <td data-bs-toggle="tooltip" title="Profundidades llenas de vegetación, protegidas por bichos cubiertos de plantas. La gran cantidad de ácido y vegetación dificultan el paso.">Sendero Verde</td>
+                  <td>Sí</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Fungiguerrero</td>
+                  <td><img src="./images/fungiguerrero.png" alt="fungiguerrero"></td>
+                  <td class="text-start">Criatura fúngica que ataca a los intrusos para proteger a sus crías.</td>
+                  <td data-bs-toggle="tooltip" title="Son cavernas abarrotadas de esporas. A diferencia del resto de zonas de Hallownest, está habitada por seres fúngicos. Al sur, se encuentra la Aldea Mantis, y  al este, la Ciudad de Lágrimas.">Páramos Fúngicos</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Señores Mantis</td>
+                  <td><img src="./images/senioresmantis.png" alt="señores mantis"></td>
+                  <td class="text-start">Son los líderes de la tribu mantis, y sus mejores guerreros. Portan finas lanzas aguijón, y atacan con la velocidad del rayo.</td>
+                  <td data-bs-toggle="tooltip" title="Son cavernas abarrotadas de esporas. A diferencia del resto de zonas de Hallownest, está habitada por seres fúngicos. Al sur, se encuentra la Aldea Mantis, y  al este, la Ciudad de Lágrimas.">Páramos Fúngicos</td>
+                  <td>Sí</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Cáscara Centinela</td>
+                  <td><img src="./images/cascaracentinela.png" alt="cascara centinela"></td>
+                  <td class="text-start">Los restos reanimados de un centinela de Hallownest. Aún conserva algunos recuerdos de su anterior cometido.</td>
+                  <td data-bs-toggle="tooltip" title="Capital de Hallownest y el corazón del Reino; el agua del Lago Azul cae constantemente, creando una lluvia perpetua. Se caracteriza, además, por la presencia de varias torres y edificios como el Santuario de Almas, la Torre del Vigía, Casa de los Placeres y la Torre del Amor.">Ciudad de Lágrimas</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Caballero Vigía</td>
+                  <td><img src="./images/caballerovigia.png" alt="caballero vigia"></td>
+                  <td class="text-start">Coraza de un Caballero vigía, reanimada por un enjambre de moscas infectadas.</td>
+                  <td data-bs-toggle="tooltip" title="Capital de Hallownest y el corazón del Reino; el agua del Lago Azul cae constantemente, creando una lluvia perpetua. Se caracteriza, además, por la presencia de varias torres y edificios como el Santuario de Almas, la Torre del Vigía, Casa de los Placeres y la Torre del Amor.">Ciudad de Lágrimas</td>
+                  <td>Sí</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Cavasuelos</td>
+                  <td><img src="./images/cavasuelos.png" alt="cavasuelos"></td>
+                  <td class="text-start">Depredador de Nido Profundo que se mueve en manada. Escarba en la tierra y emerge de ella para sorprender a su presa.</td>
+                  <td data-bs-toggle="tooltip" title="Profundidad oculta en la esquina suroeste de Hallownest, repleta de toda variedad de arañas. Al oeste se encuentra Poblado distante, una gran estructura formada por telarañas y que contiene a la Soñadora Herrah.">Nido Profundo</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Xero</td>
+                  <td><img src="./images/xero.png" alt="xero"></td>
+                  <td class="text-start">Sueño persistente de un guerrero caído. Ejecutado por crímenes contra el rey.</td>
+                  <td data-bs-toggle="tooltip" title="Un gran cementerio situado al extremo este de Hallownest. El jugador llega por primera vez cayendo desde Cumbre de Cristal o usando el Tranvía. Aquí encontrará el monumento y la localización de los Soñadores, además de recibir el Aguijón Onírico.">Tierras de Reposo</td>
+                  <td>Sí</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Brillomo</td>
+                  <td><img src="./images/brillomo.png" alt="brillomo"></td>
+                  <td class="text-start">Criatura dura y lenta. Los cristales que crecen en su lomo le confieren una protección extra ante los enemigos aéreos.</td>
+                  <td data-bs-toggle="tooltip" title="Localizado al este de Bocasucia, es una alta montaña que fue usada en el pasado como mina por sus preciados cristales.">Cumbre de Cristal</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Defensor del Estiércol</td>
+                  <td><img src="./images/defensordelestiercol.png" alt="defensor del estiercol"></td>
+                  <td class="text-start">Un hábil guerrero que vive en el corazón de los Canales. Ataca a los intrusos con esferas compactas de estiércol.</td>
+                  <td data-bs-toggle="tooltip" title="Un alcantarillado formado por una serie de tuberías de desagüe bajo la superficie de Ciudad de Lágrimas. Al este se encuentra un ascensor derruido debido al abandono. Por el noreste podemos encontrar un pozo que conecta con la sala de Emilitia en la Ciudad de Lágrimas.">Canales Reales</td>
+                  <td>Sí</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Mawlurk</td>
+                  <td><img src="./images/mawlurk.png" alt="mawlurk"></td>
+                  <td class="text-start">Criatura grande e inmóvil. Escupe veneno de forma salvaje cuando algún intruso pasa a su lado.</td>
+                  <td data-bs-toggle="tooltip" title="La zona más profunda de Hallownest, casi inhóspita. Aquí se encontraba originalmente el Palacio Blanco, hogar del Rey Pálido.">Cuenca Antigua</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Receptáculo Roto</td>
+                  <td><img src="./images/receptaculoroto.png" alt="receptaculo roto"></td>
+                  <td class="text-start">Cadáver destrozado, reanimado por parásitos infectados.</td>
+                  <td data-bs-toggle="tooltip" title="La zona más profunda de Hallownest, casi inhóspita. Aquí se encontraba originalmente el Palacio Blanco, hogar del Rey Pálido.">Cuenca Antigua</td>
+                  <td>Sí</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Gran Saltamontes</td>
+                  <td><img src="./images/gransaltamontes.png" alt="gran saltamontes"></td>
+                  <td class="text-start">Salta por los límites del mundo tratando de aplastar a su presa con su cuerpo.</td>
+                  <td data-bs-toggle="tooltip" title="Sitúada al extremo este de Hallownest y con una constante lluvia de ceniza se encuentra el Límite del Reino. Cuerpos procedentes del Coliseo de los Insensatos caen desde arriba para aterrizar en un lago de ácido. Al sureste del área se encuentra un profundo foso que conduce al mayor depósito de Geo del juego.">Límite del Reino</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Áspid Primigenio</td>
+                  <td><img src="./images/aspidprimigenio.png" alt="aspid primigenio"></td>
+                  <td class="text-start">Una forma más salvaje y ancestral del áspid. Se pensaba que se habían extinguido, pero han reaparecido en los límites del mundo.</td>
+                  <td data-bs-toggle="tooltip" title="Sitúada al extremo este de Hallownest y con una constante lluvia de ceniza se encuentra el Límite del Reino. Cuerpos procedentes del Coliseo de los Insensatos caen desde arriba para aterrizar en un lago de ácido. Al sureste del área se encuentra un profundo foso que conduce al mayor depósito de Geo del juego.">Límite del Reino</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Uumuu</td>
+                  <td><img src="./images/uumuu.png" alt="uumuu"></td>
+                  <td class="text-start">Ser inteligente que protege la cámara interior de los Archivos de la Maestra.</td>
+                  <td data-bs-toggle="tooltip" title="Una pequeña zona repleta de niebla, burbujas y ácido. En el centro se sitúan los Archivos de la Maestra, casa de la Soñadora Monomon y sus experimentos.">Cañón Nublado</td>
+                  <td>Sí</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Petramantis</td>
+                  <td><img src="./images/petramantis.png" alt="petramantis"></td>
+                  <td class="text-start">Acecha entre el follaje y ataca lanzando viento con forma de guadaña a distancia.</td>
+                  <td data-bs-toggle="tooltip" title="Una área llena de verjas ornamentadas, espinas y peligrosas plataformas situada al oeste Hallownest. En el pasado se trataba de los jardines de la Dama Blanca, pero fue invadida por las Mantis Traidoras que habían sido desterradas de su tribu.">Jardines de la Reina</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="nombre">Hollow Knight</td>
+                  <td><img src="./images/hollowknight.png" alt="hollow knight"></td>
+                  <td class="text-start">Receptáculo adulto que encierra al corazón de la plaga en su cuerpo.</td>
+                  <td data-bs-toggle="tooltip" title="Estas carreteras antaño eran concurridas por viajeros de todo Hallownest. Pero tras muchos años el deterioro, las plagas de bichos agresivos y los restos de antiguos habitantes, las han transformado en una zona peligrosa.">Cruces Olvidados</td>
+                  <td>No</td> 
+                  <td>
+                    <a href="./registrousuario.html"><button class="btn btn-success"><i class="bi bi-pencil fs-3 text-light"></i></button></a>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      <i class="bi bi-trash3 fs-3 text-light"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLable1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Acción denegada</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Necesita estar registrado para realizar esta acción</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" data-bs-dismiss="modal">Atrás</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div> 
+
+    <div class="row p-4 mt-2 text-center">
+      <div class="col-12 col-md-5 bg-dark p-4 m-auto">
+        <p class="text-light">Esta lista está incompleta, por favor, ayúdanos a expandirla<br></p>
+        <a href="./insertarenemigonuevo.html"><button class="btn btn-success">Añadir enemigo</button></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./javascripts/javascripts.js"></script>
+</body>
+</html>
