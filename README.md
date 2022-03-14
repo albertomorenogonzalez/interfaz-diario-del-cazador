@@ -17,3 +17,75 @@ Esta es la interfaz de la aplicación CRUD “Diario del Cazador” realizada pa
 <br>
 
 ![index](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/index.png)
+
+Index
+
+<br>
+
+![principalusuario](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/principalusuario.png)
+
+![principalusuario2](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/principalusuaio2.png)
+
+![principalusuario3](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/principalusuario3.png)
+
+Página Principal (Usuario no Registrado)
+
+<br>
+
+![registrodeusuarios](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/registrodeusuarios.png)
+
+Página de Registro de Usuarios
+
+<br>
+
+![confirmacionusuarioregistrado](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/confirmacionusuarioregistrado.png)
+
+Confirmación de Usuario Registrado
+
+<br>
+
+![principalusuarioregistrado](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/principalusuario.png)
+
+![principalusuarioregistrado2](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/principalusuarioregistrado2.png)
+
+Página Principal (Usuario Registrado)
+
+<br>
+
+![confirmacionborrado](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/confirmacionborrado.png)
+
+Confirmación Borrado Enemigo
+
+<br>
+
+![aniadirenemigo](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/aniadirenemigo.png)
+
+Formulario de Añadir Enemigo
+
+<br>
+
+![confirmacionaniadido](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/confirmacionaniadido.png)
+
+Confirmación Enemigo Añadido
+
+<br>
+
+![modificarenemigo](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/modificarenemigo.png)
+
+Formulario de Modificación de Datos de Enemigo
+
+<br>
+
+![confirmacionmodificado](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/capturas/confirmacionmodificado.png)
+
+Confirmación Datos Enemigo Modificados
+
+<br>
+
+---
+
+**Procedencia de los Recursos de la interfaz:**
+
+<br>
+
+Puedes verla pinchando [aquí](https://github.com/albertomorenogonzalez/interfaz-diario-del-cazador/blob/main/ReadMe.pdf)
